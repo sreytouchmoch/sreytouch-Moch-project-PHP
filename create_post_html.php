@@ -2,7 +2,7 @@
     <div class="container p-4">
         <form action="create_post_model.php" method="post">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="name" name="name"  >
+                <input type="text" class="form-control" placeholder="foodname" name="name"  >
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="image" name="image">
@@ -14,7 +14,7 @@
                 <input type="text" class="form-control" placeholder="description" name="description">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="date" name="date">
+                <input type="date" class="form-control" placeholder="date" name="date">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Save</button>

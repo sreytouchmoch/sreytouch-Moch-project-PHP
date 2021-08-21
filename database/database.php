@@ -30,7 +30,7 @@
         $name = $value['name'];
         $description = $value['description'];
         
-        return db()->query("INSERT INTO category (name),(description) VALUES ('$name','$description')");
+        return db()->query("INSERT INTO category (name,description) VALUES ('$name','$description')");
     }
     
     function selectpostOne($id) {

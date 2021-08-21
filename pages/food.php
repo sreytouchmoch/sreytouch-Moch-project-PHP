@@ -8,20 +8,21 @@
             $postitem = getpost();
             foreach($postitem as $item):
         ?>
-        <div class="card">
+        <div class="card mt-4">
             <div class="card-body">
                <div class="d-flex">
                     <div class="card-image mr-3">
-                        <img class="img-fluid" width="200" src="<?=$item['image']?>" alt="">
                     </div>
                     <div class="info">
-                        <h1 class="display-3"> <?= $item['name'] ?> </h1>
-                        <span> <?= $item['price'] ?>$</span>
-                        <span> <?= $item['description'] ?></span>
+                        <h1 class="display-4"> <?= $item['name'] ?> </h1>
+                        <img class="img-fluid" width="200" src="<?=$item['image']?>" alt="">
+                        <p> <?= $item['description'] ?></p>
+                        <strong> <?= $item['price'] ?>$</strong>
+
                     </div>
                </div>
                 <div class="action d-flex justify-content-end">
-                    <span> <?= $item['date'] ?></span>
+                    <p> <?= $item['date'] ?></p>
                 </div>
                 <div class="action d-flex justify-content-end">
                     <a href="edit_post_html.php?id=<?= $item['post_id']?> " class="btn btn-primary btn-sm mr-2"><i class="fa fa-pencil"></i></a>
@@ -32,3 +33,13 @@
         <?php endforeach; ?>
     </div>
 <?php require_once('partials/footer.php'); ?>
+<style>
+     h1{
+         color:blue;
+         font-family:serif;
+         font-size:15px;
+     }
+     strong{
+         color:red;
+     }
+</style>

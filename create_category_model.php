@@ -7,6 +7,6 @@
      echo $isCreated;
 
      if($isCreated){
-         header('Location: index.php');
+         header('Location: index.php?page=ice_cream');
      }
- }
+}

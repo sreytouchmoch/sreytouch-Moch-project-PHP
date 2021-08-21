@@ -10,9 +10,11 @@
         <form action="edit_category_model.php" method="post">
             <input type="hidden" name="id" value="<?= $item['category_id'] ?>">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Item name" name="name" value="<?= $item['name'] ?>">
+                <input type="text" class="form-control" placeholder=" ice_cream name" name="name" value="<?= $item['name'] ?>">
             </div>
-            
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder=" description" name="description" value="<?= $item['description'] ?>">
+            </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Save</button>
             </div>

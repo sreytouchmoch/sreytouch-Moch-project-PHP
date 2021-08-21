@@ -23,7 +23,7 @@
                 <input type="text" class="form-control" placeholder="description" name="description" value="<?= $item['description'] ?>">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="date" name="date" value="<?= $item['date'] ?>">
+                <input type="date" class="form-control" placeholder="date" name="date" value="<?= $item['date'] ?>">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Save</button>
@@ -31,4 +31,4 @@
         </form>
         <?php endforeach; ?> 
     </div>
-<?php require_once('partials/footer.php'); ?>
+<?php require_once('partials/footer.php'); ?>   
